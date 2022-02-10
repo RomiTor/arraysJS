@@ -1,6 +1,6 @@
 const { alphabetize } = require("../src/ejercicio8");
 
-describe("Función onlyUnique", () => {
+describe("Función alphabetize", () => {
     it("Para el array [[e, d, f], [a, c, b], [m, o, n]] va a retornar [[a, b, c], [d, e, f], [o, m, n]]", () => {
         //arrange
         const someArray = [["e", "d", "f"],["a", "c", "b"],["m", "o", "n"]];
