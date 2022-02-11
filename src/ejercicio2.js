@@ -1,9 +1,7 @@
 console.clear();
-console.log("Ejercicio 2: Escriba una función que reciba dos matrices, luego mezcle las dos matrices de manera uniforme, comenzando con el primer elemento de la primera matriz. La matriz devuelta debe alternar entre cada matriz a su vez, un elemento a la vez.");
+console.log("Ejercicio 2: Escriba una función que mezcle dos matrices, alternando un elemento a la vez, comenzando con el primer elemento de la primera matriz.");
 
 const mix = (firstArray, secondArray) => { 
-   
-
     if(!Array.isArray(firstArray, secondArray)){
         throw new Error("Error");
     }

@@ -15,11 +15,16 @@ describe("Función shuffle", () => {
     });
 
     it("Si se ingresa un string va a retornar error", () => {
-            //arrange
-            const someArray = "hola";
+        //arrange
+        const someArray = "hola";
             
-            //act and assert
-            expect(() => shuffle(someArray)).toThrow("Error");
-        });
+        //act and assert
+        expect(() => shuffle(someArray)).toThrow("Error");
+    });
+    
+    it("Mix sin parametros va a arrojar un error", () => {
+        //act and assert
+        expect(() => shuffle()).toThrow("Error");
+    });
 
 });

@@ -1,6 +1,10 @@
-console.log("Ejercicio 8: Escriba una función que devuelva una matriz ordenada alfabéticamente, los números deben ir primero.");
+console.log("Ejercicio 11: Escriba una función que devuelva una matriz en orden ascendente, los números deben ir primero.");
 
 const sortTheArray = (someArray) => {
+    if(!Array.isArray(someArray)){
+        throw new Error("Error");
+    }
+
     const numArray = []
     const strArray = []
     
@@ -13,10 +17,12 @@ const sortTheArray = (someArray) => {
         }
         
     });
-    console.log(numArray)
-    console.log(strArray)
+    
     return numArray.sort((a, b) => a - b).concat(strArray.sort());
 }
 
-console.log(sortTheArray(["b", 6, "a", "q", 7, 2])) 
+module.exports = {
+    sortTheArray
+}
+//console.log(sortTheArray(["b", 6, "a", "q", 7, 2])) 
 // [2, 6, 7, "a", "b", "q"]

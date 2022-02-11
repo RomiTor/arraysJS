@@ -30,10 +30,7 @@ describe("Funcion mix", () => {
         const firstArray = "hola";
         const secondArray = [4, 5, 6];
 
-        //act
-        
-
-        //assert
+        //act and assert
         expect(() => mix()).toThrow("Error");
     });
 
@@ -48,7 +45,6 @@ describe("Funcion mix", () => {
         //assert
         expect(resultado).toThrow("Error");
     });
-
 
     it("Si no se ingresan parametros va a arrojar error", () => {
 
